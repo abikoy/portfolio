@@ -1,0 +1,95 @@
+.slide-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.share-btn {
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    scale: .8;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    margin-bottom: 10px;
+
+}
+
+.share-btn:hover {
+    scale: .9;
+
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%;
+    background: linear-gradient(to right, #FFCCCB);
+    transition: .2s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background: #268299;
+}
+
+.github, .twitter, .instagram, .linkedin {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .slide-bar {
+        width: 6%;
+        z-index: 10;
+        gap: 1px;
+        right: 0;
+        transform: translateY(-50);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 6px 60px;
+        background: linear-gradient(to right,  #FFCCCB);
+
+    }
+
+    
+
+    .share-btn {
+        scale: 0.7;
+        width: 40px; /* Reduce size for smaller screens */
+        height: 40px; /* Reduce size for smaller screens */
+        margin: 0 5px; /* Adjust margin for horizontal layout */
+    }
+
+    .card {
+        width: 40px; /* Reduce size for smaller screens */
+        height: 40px; /* Reduce size for smaller screens */
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .github, .twitter, .instagram, .linkedin {
+        width: 25px; /* Reduce icon size for smaller screens */
+        height: 25px; /* Reduce icon size for smaller screens */
+    }
+    
+}

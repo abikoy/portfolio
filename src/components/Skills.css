@@ -1,0 +1,87 @@
+
+.skills {
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+    gap: 20px;
+    flex-direction: column;
+  }
+  .exprience{
+    text-decoration: underline;
+  }
+.img{
+  display: flex;
+  flex-direction: row;
+}
+  .skills img {
+    width: 250px; 
+    height: 250px;
+    object-fit: contain;
+
+    margin: 10px; 
+    transition: transform 0.3s ease; /* Add smooth transition for rotation */
+    box-shadow: 3px 4px 5px 10px rgb(36, 16, 33);
+  }
+  .skills img:hover {
+    animation: bounce 1s infinite; /* Apply the bounce animation only when hovering */
+    box-shadow: 3px 4px 5px 14px rgb(36, 2, 31);
+  }
+  .skill-text {
+    font-family:cursive; /* Style the text */
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-family: 'Lobster', cursive, 'Poppins', sans-serif;
+
+  }
+  h3{
+    font-family: 'Lobster', cursive, 'Poppins', sans-serif;
+
+  }
+
+  
+  
+  @keyframes bounce {
+   0% {
+      transform: rotate(0deg); /* Initial rotation angle */
+    }
+    50% {
+      transform: rotate(
+        -10deg
+      ); /* Rotate to -10 degrees at midpoint of animation */
+    }
+    100% {
+      transform: rotate(0deg); /* Return to initial rotation angle */
+    }
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    .skills {
+        padding-bottom: 50px; 
+        gap: 10px;
+    }
+
+    .skills img {
+        width: 150px; 
+        height: 150px; 
+    }
+
+    .skill-text {
+        font-size: 1.5rem;
+        margin-top: 0.3rem; 
+    }
+
+    .img {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    h3{
+      font-family: 'Lobster', cursive, 'Poppins', sans-serif;
+      
+  
+    }
+}
