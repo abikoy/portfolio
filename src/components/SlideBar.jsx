@@ -19,22 +19,22 @@ const SlideBar = () => {
       {showCards && (
         <div className="card-container">
           <div className="card card1">
-            <a href="https://github.com">
+            <a href="https://github.com/abikoy">
               <img src={github} alt="GitHub" className="github" />
             </a>
           </div>
           <div className="card card2">
-            <a href="https://twitter.com">
+            <a href="https://x.com/abkoy19">
               <img src={twitter} alt="Twitter" className="twitter" />
             </a>
           </div>
           <div className="card card3">
-            <a href="https://instagram.com">
+            <a href="https://www.instagram.com/abkoy19/">
               <img src={ig} alt="Instagram" className="instagram" />
             </a>
           </div>
           <div className="card card4">
-            <a href="https://linkedin.com">
+            <a href="https://www.linkedin.com/in/haile-kinfu-32b1422a0/">
               <img src={linkedin} alt="LinkedIn" className="linkedin" />
             </a>
           </div>

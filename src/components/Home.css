@@ -38,7 +38,8 @@ margin-left: 27px;
 
 h1 {
     color: black; /* Ensure the header is visible */
-    font-family: 'Lobster', cursive; }
+    font-family: 'Lobster', cursive;
+   }
 
 @media screen and (max-width: 600px) {
     .home {

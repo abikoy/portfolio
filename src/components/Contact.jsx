@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './Contact.css'
 
-import ig from '../assetes/ig1.jpg'
+import ig from '../assetes/github.png'
 
 
 const Contact = () => {
@@ -69,7 +69,7 @@ const Contact = () => {
             <h1 className='contactme'> CONTACT ME</h1>
            
             <label htmlFor="input" className="icon-label">
-    &#x1F4E7; hailekinfu00@gmail.com <img src={ig} /> abkoy19
+    &#x1F4E7; hailekinfu00@gmail.com <img src={ig} /> abikoy
 </label>
 
 
